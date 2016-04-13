@@ -23,12 +23,20 @@ var Chart = React.createClass({
 
 		GoogleChartLoader.init(this.props.chartPackages, this.props.chartVersion).then(function(){
 			self.drawChart();
+            if( this.props.selection )
+            {
+                this.chart.setSelection(this.props.selection);
+            }
 		});
 	},
 
 	componentDidUpdate: function(){
 		if (GoogleChartLoader.is_loaded){
 			this.drawChart();
+            if( this.props.selection )
+            {
+                this.chart.setSelection(this.props.selection);
+            }
 		};
 	},
 
@@ -52,6 +60,7 @@ var Chart = React.createClass({
 			chartActions : null,
 			data: null,
 			onSelect: null,
+            selection: null,
 			legend_toggle: false
 		};
 	},
