@@ -1,2 +1,11 @@
-node_modules
-test/bower_components
+/coverage
+/node_modules
+npm-debug.log
+.idea/*
+/demo/dist
+/es6
+/lib
+/umd
+npm-debug.log*
+/dist
+/out

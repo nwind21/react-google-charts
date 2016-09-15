@@ -1,7 +1,7 @@
-var Chart = require('./components/Chart');
-var sample_data = require('./constants/SAMPLE_DATA');
+import React from 'react'
 
-module.exports = {
-	Chart: Chart,
-	sample_data: sample_data
-}
+//import googleChartLoader from './components/GoogleChartLoader';
+import Chart from './components/Chart'
+//import SAMPLE_DATA from './constants/SAMPLE_DATA';
+
+export default {Chart: Chart};
