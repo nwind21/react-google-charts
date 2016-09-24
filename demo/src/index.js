@@ -10,7 +10,7 @@ import PageLayout from './components/PageLayout'
 import ChartEditor from './components/ChartEditor'
 import Usage from './components/Usage'
 
-import {Chart} from '../../../react-google-charts-v2/'
+import {Chart} from '../../../react-google-charts/'
 //import Chart from '../../src/components/Chart'
 import PropsEditor from '../../src/components/PropsEditor'
 import SAMPLE_DATA from '../../src/constants/SAMPLE_DATA';
